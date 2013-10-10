@@ -1,0 +1,20 @@
+%p#notice= notice
+%div.customer
+  %div.name
+    %span Name:
+    %span= @customer.fname
+    %span= @customer.lname
+  %div.age
+    %span Age:
+    %span= Customer.age(@customer.dob)
+  %div.dob
+    %span Birthday:
+    %span= @customer.dob.strftime("%m-%d-%Y")
+  %div.updated
+    %span Updated At:
+    %span= @customer.updated_at ? @customer.updated_at.strftime("%m-%d-%Y %I:%M:%S %p") : nil
+
+%br
+= link_to 'Edit', edit_customer_path(@customer)
+= link_to 'Back', customers_path
+
