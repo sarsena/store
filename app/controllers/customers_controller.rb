@@ -40,7 +40,7 @@ class CustomersController < ApplicationController
   # POST /customers.json
   def create
     dob = Date.strptime(params[:dob], "%m-%d-%Y")
-    @customer = Customer.new(:age => params[:age], :fname => params[:fname], :lname => params[:lname], :dob => dob.strftime("%Y-%m-%d"))
+    @customer = Customer.new(:age => Customer.age(dob), :fname => params[:fname], :lname => params[:lname], :dob => dob.strftime("%Y-%m-%d"))
  
     respond_to do |format|
       if @customer.save

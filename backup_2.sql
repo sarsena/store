@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.1.69, for redhat-linux-gnu (x86_64)
 --
--- Host: 127.4.141.1    Database: ruby_class
+-- Host: 127.13.90.129    Database: ruby_class
 -- ------------------------------------------------------
--- Server version    5.1.69
+-- Server version	5.1.69
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -16,7 +16,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `Customers`
+-- Table structure for table `customers`
 --
 
 DROP TABLE IF EXISTS `customers`;
@@ -29,22 +29,23 @@ CREATE TABLE `customers` (
   `age` int(3) NOT NULL,
   `dob` date NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Customers`
+-- Dumping data for table `customers`
 --
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (1,'Steven','Arsena',24,'1988-12-19','2013-07-31 01:06:57'),(2,'Aaron','Kirby',23,'1989-08-01','2013-07-31 01:06:57'),(3,'Patrick','Nolan',24,'1989-03-26','2013-07-31 01:06:57');
+INSERT INTO `customers` VALUES (1,'Steven','Arsena',24,'1988-12-19','2013-10-24 01:52:22','2013-10-24 01:52:21'),(2,'Aaron','Kirby',23,'1989-08-01','2013-07-31 01:06:57','0000-00-00 00:00:00'),(3,'Patrick','Nolan',24,'1989-03-26','2013-07-31 01:06:57','0000-00-00 00:00:00'),(4,'Ryan','Pittman',28,'1985-09-08','2013-10-24 05:56:31','2013-10-24 05:56:31');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Logs`
+-- Table structure for table `logs`
 --
 
 DROP TABLE IF EXISTS `logs`;
@@ -59,7 +60,7 @@ CREATE TABLE `logs` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Logs`
+-- Dumping data for table `logs`
 --
 
 LOCK TABLES `logs` WRITE;
@@ -69,7 +70,7 @@ INSERT INTO `logs` VALUES ('Customers Load','','success','2013-07-18 01:59:06'),
 UNLOCK TABLES;
 
 --
--- Table structure for table `Order_products`
+-- Table structure for table `order_products`
 --
 
 DROP TABLE IF EXISTS `order_products`;
@@ -85,7 +86,7 @@ CREATE TABLE `order_products` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Order_products`
+-- Dumping data for table `order_products`
 --
 
 LOCK TABLES `order_products` WRITE;
@@ -95,7 +96,7 @@ INSERT INTO `order_products` VALUES (1,123,1,1),(2,123,2,1),(3,124,1,1),(4,124,4
 UNLOCK TABLES;
 
 --
--- Table structure for table `Orders`
+-- Table structure for table `orders`
 --
 
 DROP TABLE IF EXISTS `orders`;
@@ -111,7 +112,7 @@ CREATE TABLE `orders` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Orders`
+-- Dumping data for table `orders`
 --
 
 LOCK TABLES `orders` WRITE;
@@ -121,7 +122,7 @@ INSERT INTO `orders` VALUES (123,1,'2013-07-31 19:22:49',50),(124,3,'2013-07-31 
 UNLOCK TABLES;
 
 --
--- Table structure for table `Products`
+-- Table structure for table `products`
 --
 
 DROP TABLE IF EXISTS `products`;
@@ -136,7 +137,7 @@ CREATE TABLE `products` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Products`
+-- Dumping data for table `products`
 --
 
 LOCK TABLES `products` WRITE;
@@ -154,4 +155,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-13 21:36:32
+-- Dump completed on 2013-10-23 21:58:02
