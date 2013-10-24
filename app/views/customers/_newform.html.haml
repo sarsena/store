@@ -5,8 +5,8 @@
       %ul
         - @customer.errors.full_messages.each do |msg|
           %li= msg
-  = text_field_tag 'fname', @customer.fname, :placeholder => "First Name", :class => "first-name"
-  = text_field_tag 'lname', @customer.lname, :placeholder => "Last Name", :class => "last-name"
+  = text_field_tag 'fname', '', :placeholder => "First Name", :class => "first-name"
+  = text_field_tag 'lname', '', :placeholder => "Last Name", :class => "last-name"
   = text_field_tag 'dob', '', :placeholder => "DOB ex: MM-DD-YYYY", :class => "dob"
   .actions
     = f.submit 'Save'
