@@ -1,5 +1,7 @@
 class Customer < ActiveRecord::Base
   attr_accessible :age, :fname, :lname, :dob
+  has_many :orders
+  
   class << self
     def age(dob)
       now = Time.now.to_date

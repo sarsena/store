@@ -1,4 +1,5 @@
 %p#notice= notice
+%h2 Customer Details
 %div.customer
   %div.name
     %span Name:
@@ -14,6 +15,19 @@
     %span Updated At:
     %span= @customer.updated_at ? @customer.updated_at.strftime("%m-%d-%Y %I:%M:%S %p") : nil
 
+%h3 Customer Orders
+%div.orders
+  %table
+    %tr
+      %th Order ID
+      %th Total
+      %th Date Placed
+    %tbody
+    - @customer.orders.each do |order|
+      %tr
+        %td=order.id
+        %td=order.order_total
+        %td=order.order_placed
 %br
 = link_to 'Edit', edit_customer_path(@customer)
 = link_to 'Back', customers_path

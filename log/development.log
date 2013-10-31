@@ -13161,3 +13161,619 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-23 22:36:03 -0400
 Served asset /bootstrap - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails.png" for 127.13.90.129 at 2013-10-30 21:05:42 -0400
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (20ms)
+
+
+Started GET "/customers" for 127.13.90.129 at 2013-10-30 21:05:47 -0400
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (15.1ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 535ms (Views: 276.1ms | ActiveRecord: 117.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 21:05:47 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 21:05:48 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 21:05:48 -0400
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 21:05:48 -0400
+Served asset /bootstrap - 304 Not Modified (158ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 21:05:48 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 21:05:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 21:05:48 -0400
+Served asset /customers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 21:05:48 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/customers" for 127.13.90.129 at 2013-10-30 21:50:40 -0400
+Connecting to database specified by database.yml
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 286ms (Views: 138.9ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 21:50:42 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 21:50:42 -0400
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 21:50:43 -0400
+Served asset /customers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 21:50:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 21:50:43 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 21:50:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 21:50:43 -0400
+Served asset /bootstrap - 304 Not Modified (78ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 21:50:43 -0400
+Served asset /application.js - 304 Not Modified (32ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 21:50:49 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (1.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (0.7ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 314ms (Views: 53.8ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 21:50:49 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 21:50:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 21:50:49 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 21:50:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 21:50:49 -0400
+Served asset /customers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 21:50:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 21:50:50 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 21:50:50 -0400
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 22:01:10 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (1.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (3.1ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (220.5ms)
+Completed 200 OK in 366ms (Views: 259.2ms | ActiveRecord: 46.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:01:10 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:01:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:01:11 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:01:11 -0400
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:01:11 -0400
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:01:11 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:01:11 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:01:11 -0400
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:02:09 -0400
+Served asset /bootstrap - 304 Not Modified (7ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (1.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:03:47 -0400
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (0.5ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (20.2ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:04:07 -0400
+Served asset /bootstrap - 304 Not Modified (5ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (0.9ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Served asset /customers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:04:23 -0400
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Served asset /customers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Served asset /customers.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:04:30 -0400
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/customers" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT `customers`.* FROM `customers` 
+  Rendered customers/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:04:36 -0400
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/customers/2" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1[0m
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2
+  Rendered customers/show.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Served asset /customers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:04:40 -0400
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/customers" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Served asset /customers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:04:54 -0400
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (2.5ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (1.2ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 21ms (Views: 14.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:07:56 -0400
+Served asset /bootstrap - 304 Not Modified (5ms)
+
+
+Started GET "/customers/1/edit" for 127.13.90.129 at 2013-10-30 22:08:30 -0400
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (2.7ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  Rendered customers/_form.html.haml (8.1ms)
+  Rendered customers/edit.html.haml within layouts/application (58.0ms)
+Completed 200 OK in 86ms (Views: 81.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:08:30 -0400
+Served asset /customers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:08:30 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:08:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:08:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:08:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:08:31 -0400
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:08:31 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:08:31 -0400
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-10-30 22:08:34 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1
+  Rendered customers/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-10-30 22:08:34 -0400
+Served asset /customers.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-10-30 22:08:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-10-30 22:08:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-10-30 22:08:35 -0400
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-10-30 22:08:35 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-10-30 22:08:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-10-30 22:08:35 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:08:35 -0400
+Served asset /bootstrap - 304 Not Modified (4ms)
