@@ -1,5 +1,7 @@
 Store::Application.routes.draw do
 
+  resources :orders
+
   resources :customers
   get '/customers' => "customers#index"
   get '/customers/:id' => "customers#show"

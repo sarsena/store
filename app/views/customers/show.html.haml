@@ -25,7 +25,7 @@
     %tbody
     - @customer.orders.each do |order|
       %tr
-        %td=order.id
+        %td=link_to order.id, order
         %td=order.order_total
         %td=order.order_placed
 %br

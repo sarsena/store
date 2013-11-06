@@ -1,0 +1,26 @@
+%h2 Order Details
+%p#notice= notice
+
+%p
+  Order ID:
+  %span=@order.id
+%p
+  Order Total:
+  %span=@order.order_total
+
+%table
+  %tr
+    %th Product Description
+    %th Product Price
+    %th Quantity
+  - OrderProduct.product(@order.id).each do |order_product|
+    %tr
+      - Product.products(order_product.product_id).each do |product|
+        %td=product.product_description
+        %td=product.product_price
+      %td= order_product.quantity
+    
+
+= link_to 'Edit', edit_order_path(@order)
+\|
+= link_to 'Back', orders_path

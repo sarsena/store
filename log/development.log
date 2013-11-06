@@ -13777,3 +13777,1850 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-10-30 22:08:35 -0400
 Served asset /bootstrap - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.13.90.129 at 2013-11-04 21:42:32 -0500
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (23ms)
+
+
+Started GET "/orders" for 127.13.90.129 at 2013-11-04 21:43:24 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (102.6ms)
+Compiled orders.css  (63ms)  (pid 373191)
+Compiled application.css  (300ms)  (pid 373191)
+Compiled orders.js  (1206ms)  (pid 373191)
+Compiled application.js  (1446ms)  (pid 373191)
+Completed 200 OK in 3313ms (Views: 3002.9ms | ActiveRecord: 44.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 21:43:27 -0500
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 21:43:27 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 21:43:27 -0500
+Served asset /orders.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:43:27 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 21:43:27 -0500
+Served asset /jquery.js - 304 Not Modified (65ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 21:43:27 -0500
+Served asset /customers.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 21:43:27 -0500
+Served asset /bootstrap - 304 Not Modified (317ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:43:28 -0500
+Served asset /orders.js - 200 OK (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:43:28 -0500
+Served asset /customers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 21:43:28 -0500
+Served asset /application.js - 304 Not Modified (26ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:43:31 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  Rendered orders/show.html.haml within layouts/application (71.7ms)
+Completed 500 Internal Server Error in 84ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:4: syntax error, unexpected '.'
+  def.self product(id)
+      ^
+/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: -OrderProduct.product(@order.id).each do |order_product|
+    6:   %p=order_product.quantity
+    7:   %div
+    8:     - Product.products(order_product.product_id).each do |product|
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___1897264981796021657_25856300'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.2ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:43:57 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  Rendered orders/show.html.haml within layouts/application (77.8ms)
+Completed 500 Internal Server Error in 102ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: -OrderProduct.product(@order.id).each do |order_product|
+    6:   %p=order_product.quantity
+    7:   %div
+    8:     - Product.products(order_product.product_id).each do |product|
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___1897264981796021657_25856300'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.2ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (92.1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:44:51 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (2.1ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  Rendered orders/show.html.haml within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: - OrderProduct.product(@order.id).each do |order_product|
+    6:   %p=order_product.quantity
+    7:   %div
+    8:     - Product.products(order_product.product_id).each do |product|
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___1897264981796021657_25957220'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (56.0ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:44:54 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  Rendered orders/show.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: - OrderProduct.product(@order.id).each do |order_product|
+    6:   %p=order_product.quantity
+    7:   %div
+    8:     - Product.products(order_product.product_id).each do |product|
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___1897264981796021657_25957220'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:44:55 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  Rendered orders/show.html.haml within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: - OrderProduct.product(@order.id).each do |order_product|
+    6:   %p=order_product.quantity
+    7:   %div
+    8:     - Product.products(order_product.product_id).each do |product|
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___1897264981796021657_25957220'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.6ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (58.7ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:46:19 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  Rendered orders/show.html.haml within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: - p OrderProduct.product(@order.id)
+    6: - OrderProduct.product(@order.id).each do |order_product|
+    7:   %p=order_product.quantity
+    8:   %div
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___1897264981796021657_70246982169020'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (86.1ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (172.5ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:46:32 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  Rendered orders/show.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: - p OrderProduct.product(@order.id)
+    6: - OrderProduct.product(@order.id).each do |order_product|
+    7:   %p=order_product.quantity
+    8:   %div
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___1897264981796021657_70246982169020'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.6ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:46:34 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  Rendered orders/show.html.haml within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: - p OrderProduct.product(@order.id)
+    6: - OrderProduct.product(@order.id).each do |order_product|
+    7:   %p=order_product.quantity
+    8:   %div
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___1897264981796021657_70246982169020'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.7ms)
+
+
+Started GET "/assets/rails.png" for 127.13.90.129 at 2013-11-04 21:46:39 -0500
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/orders" for 127.13.90.129 at 2013-11-04 21:47:03 -0500
+Connecting to database specified by database.yml
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (72.8ms)
+Completed 200 OK in 613ms (Views: 302.0ms | ActiveRecord: 66.2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /customers.css - 304 Not Modified (75ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /orders.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /customers.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 21:47:06 -0500
+Served asset /bootstrap - 304 Not Modified (193ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:47:09 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  Rendered orders/show.html.haml within layouts/application (65.3ms)
+Completed 500 Internal Server Error in 84ms
+
+ActionView::Template::Error (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+    2: 
+    3: %p=@order.id
+    4: %p=@order.order_total
+    5: - p OrderProduct.product(@order.id)
+    6: - OrderProduct.product(@order.id).each do |order_product|
+    7:   %p=order_product.quantity
+    8:   %div
+  app/views/orders/show.html.haml:5:in `_app_views_orders_show_html_haml___3791705846281419392_15338360'
+  app/controllers/orders_controller.rb:18:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.2ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:48:08 -0500
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/controllers/orders_controller.rb:17: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+  - p OrderProduct.product(@order.id)
+                  ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__217363271155614940__call__3146646925617513934__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:48:33 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+Completed 500 Internal Server Error in 107ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.2ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:48:58 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+Completed 500 Internal Server Error in 31ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (114.0ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:49:27 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (1.0ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+Completed 500 Internal Server Error in 69ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (76.3ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:49:47 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+Completed 500 Internal Server Error in 120ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.5ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:49:55 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+Completed 500 Internal Server Error in 105ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:49:56 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+Completed 500 Internal Server Error in 15ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (92.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (153.0ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:49:57 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+Completed 500 Internal Server Error in 14ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:49:57 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+Completed 500 Internal Server Error in 14ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (84.9ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:49:57 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (61.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+Completed 500 Internal Server Error in 87ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (78.1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:49:57 -0500
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /opt/rh/ruby193/root/usr/share/ruby/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /opt/rh/ruby193/root/usr/share/ruby/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /opt/rh/ruby193/root/usr/share/ruby/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /opt/rh/ruby193/root/usr/share/ruby/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at /opt/rh/ruby193/root/usr/share/ruby/monitor.rb:211)
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+Completed 500 Internal Server Error in 256ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (158.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (51.1ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (803.2ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:50:13 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+Completed 500 Internal Server Error in 805ms
+
+SyntaxError (/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:4: syntax error, unexpected '.'
+  def.self get_products(id)
+      ^
+/var/lib/stickshift/526879f3500446115e0000c3/app-root/data/656943/app/models/order_product.rb:7: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (105.2ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (99.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (628.7ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:51:20 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  [1m[36mOrderProduct Load (34.0ms)[0m  [1mSELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1
+  Rendered orders/show.html.haml within layouts/application (141.4ms)
+Completed 500 Internal Server Error in 233ms
+
+ActionView::Template::Error (undefined method `description' for #<Product:0x00000002af81e0>):
+    7:   %p=order_product.quantity
+    8:   %div
+    9:     - Product.products(order_product.product_id).each do |product|
+    10:       %p=product.description
+    11:       %p=product.price
+    12:   
+    13: 
+  app/views/orders/show.html.haml:10:in `block (2 levels) in _app_views_orders_show_html_haml___3791705846281419392_21748760'
+  app/views/orders/show.html.haml:9:in `block in _app_views_orders_show_html_haml___3791705846281419392_21748760'
+  app/views/orders/show.html.haml:6:in `_app_views_orders_show_html_haml___3791705846281419392_21748760'
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (87.2ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:51:32 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.5ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  Rendered orders/show.html.haml within layouts/application (35.4ms)
+Completed 500 Internal Server Error in 172ms
+
+ActionView::Template::Error (undefined method `price' for #<Product:0x007f13580bf780>):
+    8:   %div
+    9:     - Product.products(order_product.product_id).each do |product|
+    10:       %p=product.product_description
+    11:       %p=product.price
+    12:   
+    13: 
+    14: = link_to 'Edit', edit_order_path(@order)
+  app/views/orders/show.html.haml:11:in `block (2 levels) in _app_views_orders_show_html_haml___3791705846281419392_69860532207460'
+  app/views/orders/show.html.haml:9:in `block in _app_views_orders_show_html_haml___3791705846281419392_69860532207460'
+  app/views/orders/show.html.haml:6:in `_app_views_orders_show_html_haml___3791705846281419392_69860532207460'
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:51:44 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (2.2ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  [1m[36mOrderProduct Load (2.2ms)[0m  [1mSELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1
+  Rendered orders/show.html.haml within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `price' for #<Product:0x0000000294bf18>):
+    8:   %div
+    9:     - Product.products(order_product.product_id).each do |product|
+    10:       %p=product.product_description
+    11:       %p=product.price
+    12:   
+    13: 
+    14: = link_to 'Edit', edit_order_path(@order)
+  app/views/orders/show.html.haml:11:in `block (2 levels) in _app_views_orders_show_html_haml___3791705846281419392_69860532207460'
+  app/views/orders/show.html.haml:9:in `block in _app_views_orders_show_html_haml___3791705846281419392_69860532207460'
+  app/views/orders/show.html.haml:6:in `_app_views_orders_show_html_haml___3791705846281419392_69860532207460'
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.8ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 92ms (Views: 89.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /bootstrap - 304 Not Modified (71ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:51:46 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (277.7ms)
+Completed 200 OK in 315ms (Views: 213.0ms | ActiveRecord: 87.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:34 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:35 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 21:54:35 -0500
+Served asset /bootstrap - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:35 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:35 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 21:54:35 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:58:58 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (206.3ms)
+Completed 200 OK in 493ms (Views: 266.4ms | ActiveRecord: 130.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /customers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:58:59 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:00 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:00 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:00 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 185ms (Views: 179.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /customers.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /bootstrap - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:50 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:51 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:51 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 21:59:51 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 21:59:59 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.2ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 21:59:59 -0500
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /bootstrap - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:00:00 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 22:02:03 -0500
+Connecting to database specified by database.yml
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.2ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (294.0ms)
+Completed 200 OK in 1009ms (Views: 592.4ms | ActiveRecord: 184.1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:06 -0500
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:06 -0500
+Served asset /jquery.js - 304 Not Modified (61ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:06 -0500
+Served asset /application.css - 304 Not Modified (72ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:07 -0500
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:07 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:07 -0500
+Served asset /customers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:07 -0500
+Served asset /orders.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:07 -0500
+Served asset /application.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:02:07 -0500
+Served asset /bootstrap - 304 Not Modified (90ms)
+
+
+Started GET "/customers" for 127.13.90.129 at 2013-11-04 22:02:11 -0500
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 191ms (Views: 96.1ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:12 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (2.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (390.1ms)
+Completed 200 OK in 409ms (Views: 404.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /customers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:02:14 -0500
+Served asset /bootstrap - 304 Not Modified (80ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  [1m[36mOrderProduct Load (0.3ms)[0m  [1mSELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2[0m
+  Rendered orders/show.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /customers.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /bootstrap - 304 Not Modified (57ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:19 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:19 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:19 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (2.0ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 87ms (Views: 82.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /bootstrap - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:21 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders/126" for 127.13.90.129 at 2013-11-04 22:02:24 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"126"}
+  [1m[36mOrder Load (1.6ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 126 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 126
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:24 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:24 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:24 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:02:24 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /bootstrap - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:02:25 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 66ms (Views: 59.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:03:54 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.7ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 69ms (Views: 64.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:04 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:05 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:05 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:04:05 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/123" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.4ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /customers.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /orders.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /bootstrap - 304 Not Modified (26ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:00 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/customers/1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (6.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1
+  Rendered customers/show.html.haml within layouts/application (29.5ms)
+Completed 200 OK in 60ms (Views: 48.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /customers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /bootstrap - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:02 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/customers" for 127.13.90.129 at 2013-11-04 22:07:35 -0500
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (1.1ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 101ms (Views: 97.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:35 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:35 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:35 -0500
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:35 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:36 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:36 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:07:36 -0500
+Served asset /bootstrap - 304 Not Modified (80ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:36 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:36 -0500
+Served asset /customers.js - 304 Not Modified (106ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:36 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:36 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/customers/3" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 3 LIMIT 1
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3[0m
+  Rendered customers/show.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /application.css - 304 Not Modified (79ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /customers.js - 304 Not Modified (84ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:42 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/124" for 127.13.90.129 at 2013-11-04 22:07:43 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"124"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 124 LIMIT 1
+  [1m[36mOrderProduct Load (0.3ms)[0m  [1mSELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 124[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 4[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3
+  Rendered orders/show.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 93ms (Views: 88.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /bootstrap - 304 Not Modified (5ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:44 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders" for 127.13.90.129 at 2013-11-04 22:07:51 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:51 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:51 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:51 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:51 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:51 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.13.90.129 at 2013-11-04 22:07:51 -0500
+Served asset /customers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:52 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:52 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:52 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-04 22:07:52 -0500
+Served asset /bootstrap - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:52 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:52 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.13.90.129 at 2013-11-04 22:07:52 -0500
+Served asset /application.js - 304 Not Modified (1ms)
