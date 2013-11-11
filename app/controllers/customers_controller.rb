@@ -39,8 +39,7 @@ class CustomersController < ApplicationController
   # POST /customers
   # POST /customers.json
   def create
-    dob = Date.strptime(params[:dob], "%m-%d-%Y")
-    @customer = Customer.new(:age => Customer.age(dob), :fname => params[:fname], :lname => params[:lname], :dob => dob.strftime("%Y-%m-%d"))
+    @customer = Customer.new(:age => Customer.age(params[:dob]), :fname => params[:fname], :lname => params[:lname], :dob => dob.strftime("%Y-%m-%d"))
  
     respond_to do |format|
       if @customer.save
@@ -57,13 +56,12 @@ class CustomersController < ApplicationController
   # PUT /customers/1
   # PUT /customers/1.json
   def update
-    dob = Date.strptime(params[:dob], "%m-%d-%Y")
     @customer = Customer.find(params[:id])
     respond_to do |format|
       if @customer.update_attributes(params[:customer])
         @customer.fname = params[:fname]
         @customer.lname = params[:lname]
-        @customer.dob = dob.strftime("%Y-%m-%d")
+        @customer.dob = Date.strptime(params[:dob], "%m-%d-%Y").strftime("%Y-%m-%d")
         @customer.age = Customer.age(dob)
         @customer.updated_at = Time.now.strftime("%Y-%m-%d %H:%M:%S")
         @customer.save
