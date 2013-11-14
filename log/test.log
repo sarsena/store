@@ -1,0 +1,101 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (65.0ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "customers" ("dob", "created_at", "updated_at", "id") VALUES ('12-19-1988', '2013-11-14 02:01:17', '2013-11-14 02:01:17', 20549131)[0m
+SQLite3::ConstraintException: customers.fname may not be NULL: INSERT INTO "customers" ("dob", "created_at", "updated_at", "id") VALUES ('12-19-1988', '2013-11-14 02:01:17', '2013-11-14 02:01:17', 20549131)
+  [1m[35m (98.9ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (15.4ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:03:29', '2013-11-14 02:03:29', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:03:29', '2013-11-14 02:03:29', 20549131)
+  [1m[35m (0.9ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (14.8ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (15.6ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:05:15', '2013-11-14 02:05:15', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:05:15', '2013-11-14 02:05:15', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (7.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (35.5ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:06:55', '2013-11-14 02:06:55', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:06:55', '2013-11-14 02:06:55', 20549131)
+  [1m[35m (8.7ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (25.9ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:29', '2013-11-14 02:12:29', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:29', '2013-11-14 02:12:29', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (45.1ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (18.6ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (42.4ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (9.4ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (39.5ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (51.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (46.9ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (21.8ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (76.4ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (11.2ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (172.5ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:30', '2013-11-14 02:12:30', 20549131)
+  [1m[35m (23.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (64.2ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (6.7ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:31', '2013-11-14 02:12:31', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:31', '2013-11-14 02:12:31', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (36.6ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:31', '2013-11-14 02:12:31', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:31', '2013-11-14 02:12:31', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (75.8ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:31', '2013-11-14 02:12:31', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:31', '2013-11-14 02:12:31', 20549131)
+  [1m[35m (25.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (50.2ms)[0m  DELETE FROM "customers"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:31', '2013-11-14 02:12:31', 20549131)[0m
+SQLite3::ConstraintException: customers.age may not be NULL: INSERT INTO "customers" ("fname", "lname", "dob", "created_at", "updated_at", "id") VALUES ('Steven', 'Arsena', '12-19-1988', '2013-11-14 02:12:31', '2013-11-14 02:12:31', 20549131)
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

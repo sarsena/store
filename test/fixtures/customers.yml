@@ -5,6 +5,8 @@
 # below each fixture, per the syntax in the comments below
 #
 customer: {
+  fname: "Steven",
+  lname: "Arsena",
   dob: "12-19-1988"  
 }
 # column: value

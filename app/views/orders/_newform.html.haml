@@ -1,0 +1,17 @@
+= form_for @order do |f|
+  - if @order.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@order.errors.count, "error")} prohibited this order from being saved:"
+      %ul
+        - @order.errors.full_messages.each do |msg|
+          %li= msg
+  =select "products", "product_description", options_for_select(Product.all.collect {|n| [n.product_description, n.product_description]})
+  %div.add-product
+    %p Add Product
+  %table
+    %tr
+      %th Product Description
+      %th Product Price
+    %tbody.products
+  .actions
+    = f.submit 'Save'
