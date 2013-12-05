@@ -30,18 +30,18 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "order_products", :force => true do |t|
-    t.integer "orderid",    :null => false
+    t.integer "order_id",    :null => false
     t.integer "product_id", :null => false
     t.integer "quantity",   :null => false
   end
 
-  create_table "orders", :primary_key => "orderid", :force => true do |t|
+  create_table "orders", :force => true do |t|
     t.integer   "customer_id",  :null => false
     t.timestamp "order_placed", :null => false
     t.float     "order_total",  :null => false
   end
 
-  create_table "products", :primary_key => "product_id", :force => true do |t|
+  create_table "products", :force => true do |t|
     t.string "product_description", :limit => 100, :null => false
     t.float  "product_price",                      :null => false
   end

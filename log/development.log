@@ -18229,3 +18229,984 @@ Served asset /application.js - 304 Not Modified (130ms)
 
 Started GET "/assets/bootstrap" for 127.13.90.129 at 2013-11-13 22:53:14 -0500
 Served asset /bootstrap - 304 Not Modified (7ms)
+Connecting to database specified by database.yml
+  [1m[36mCustomer Load (12.7ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders` 
+  [1m[36mOrderProduct Load (0.2ms)[0m  [1mSELECT `order_products`.* FROM `order_products` [0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products` 
+
+
+Started GET "/assets/rails.png" for 127.7.246.129 at 2013-12-04 21:45:55 -0500
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (69ms)
+
+
+Started GET "/customers" for 127.7.246.129 at 2013-12-04 21:46:00 -0500
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.haml within layouts/application (43.0ms)
+Completed 200 OK in 1004ms (Views: 410.9ms | ActiveRecord: 74.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:46:01 -0500
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:46:01 -0500
+Served asset /customers.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:46:01 -0500
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:46:01 -0500
+Served asset /orders.css - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:46:02 -0500
+Compiled bootstrap-transition.js  (0ms)  (pid 362180)
+Compiled bootstrap-affix.js  (0ms)  (pid 362180)
+Compiled bootstrap-alert.js  (0ms)  (pid 362180)
+Compiled bootstrap-button.js  (0ms)  (pid 362180)
+Compiled bootstrap-carousel.js  (0ms)  (pid 362180)
+Compiled bootstrap-collapse.js  (0ms)  (pid 362180)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 362180)
+Compiled bootstrap-modal.js  (0ms)  (pid 362180)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 362180)
+Compiled bootstrap-tab.js  (0ms)  (pid 362180)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 362180)
+Compiled bootstrap-popover.js  (3ms)  (pid 362180)
+Compiled bootstrap-typeahead.js  (0ms)  (pid 362180)
+Compiled bootstrap.js  (2659ms)  (pid 362180)
+Served asset /bootstrap - 200 OK (2985ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:46:05 -0500
+Served asset /jquery.js - 200 OK (60ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:46:05 -0500
+Served asset /application.js - 200 OK (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:46:05 -0500
+Served asset /jquery_ujs.js - 200 OK (80ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:46:05 -0500
+Served asset /customers.js - 200 OK (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:46:05 -0500
+Served asset /orders.js - 200 OK (1ms)
+
+
+Started GET "/customers/1" for 127.7.246.129 at 2013-12-04 21:46:08 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (8.4ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  Rendered customers/show.html.haml within layouts/application (139.5ms)
+Completed 500 Internal Server Error in 159ms
+
+ActionView::Template::Error (can't convert Date into String):
+    7:     %span= @customer.lname
+    8:   %div.age
+    9:     %span Age:
+    10:     %span= Customer.age(@customer.dob)
+    11:   %div.dob
+    12:     %span Birthday:
+    13:     %span= @customer.dob.strftime("%m-%d-%Y")
+  app/models/customer.rb:7:in `strptime'
+  app/models/customer.rb:7:in `age'
+  app/views/customers/show.html.haml:10:in `_app_views_customers_show_html_haml___1158856254543350363_70132056753940'
+  app/controllers/customers_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (195.4ms)
+
+
+Started GET "/customers/1" for 127.7.246.129 at 2013-12-04 21:48:12 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  Rendered customers/show.html.haml within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 265ms
+
+ActionView::Template::Error (can't convert Date into String):
+    7:     %span= @customer.lname
+    8:   %div.age
+    9:     %span Age:
+    10:     %span= Customer.age(@customer.dob)
+    11:   %div.dob
+    12:     %span Birthday:
+    13:     %span= @customer.dob.strftime("%m-%d-%Y")
+  app/models/customer.rb:8:in `strptime'
+  app/models/customer.rb:8:in `age'
+  app/views/customers/show.html.haml:10:in `_app_views_customers_show_html_haml___1158856254543350363_70132056753940'
+  app/controllers/customers_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (81.7ms)
+
+
+Started GET "/customers/1" for 127.7.246.129 at 2013-12-04 21:48:26 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (11.5ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  Rendered customers/show.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 145ms
+
+ActionView::Template::Error (can't convert Date into String):
+    7:     %span= @customer.lname
+    8:   %div.age
+    9:     %span Age:
+    10:     %span= Customer.age(@customer.dob)
+    11:   %div.dob
+    12:     %span Birthday:
+    13:     %span= @customer.dob.strftime("%m-%d-%Y")
+  app/models/customer.rb:7:in `strptime'
+  app/models/customer.rb:7:in `age'
+  app/views/customers/show.html.haml:10:in `_app_views_customers_show_html_haml___1158856254543350363_70132056753940'
+  app/controllers/customers_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/customers/1" for 127.7.246.129 at 2013-12-04 21:48:39 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  Rendered customers/show.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (can't convert Date into String):
+    7:     %span= @customer.lname
+    8:   %div.age
+    9:     %span Age:
+    10:     %span= Customer.age(@customer.dob)
+    11:   %div.dob
+    12:     %span Birthday:
+    13:     %span= @customer.dob.strftime("%m-%d-%Y")
+  app/models/customer.rb:7:in `strptime'
+  app/models/customer.rb:7:in `age'
+  app/views/customers/show.html.haml:10:in `_app_views_customers_show_html_haml___1158856254543350363_70132056753940'
+  app/controllers/customers_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (208.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (288.7ms)
+
+
+Started GET "/customers/1" for 127.7.246.129 at 2013-12-04 21:49:21 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  Rendered customers/show.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined method `updated_at' for #<Customer:0x007f91c8469d60>):
+    13:     %span= @customer.dob.strftime("%m-%d-%Y")
+    14:   %div.updated
+    15:     %span Updated At:
+    16:     %span= @customer.updated_at ? @customer.updated_at.strftime("%m-%d-%Y %I:%M:%S %p") : nil
+    17: 
+    18: %h3 Customer Orders
+    19: %div.orders
+  app/views/customers/show.html.haml:16:in `_app_views_customers_show_html_haml___1158856254543350363_70132056753940'
+  app/controllers/customers_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (85.8ms)
+
+
+Started GET "/customers/1" for 127.7.246.129 at 2013-12-04 21:50:42 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mOrder Load (3.9ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1
+  Rendered customers/show.html.haml within layouts/application (686.7ms)
+Completed 200 OK in 869ms (Views: 697.9ms | ActiveRecord: 160.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:50:43 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:50:43 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:50:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:50:43 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:50:43 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:50:43 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:50:44 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:50:44 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:50:44 -0500
+Served asset /bootstrap - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:50:44 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/customers/1" for 127.7.246.129 at 2013-12-04 21:51:01 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (6.8ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  Rendered customers/show.html.haml within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `updated_at' for #<Customer:0x007f91c40389c0>):
+    13:     %span= @customer.dob.strftime("%m-%d-%Y")
+    14:   %div.updated
+    15:     %span Updated At:
+    16:     %span= @customer.updated_at
+    17:     // %span= @customer.updated_at ? @customer.updated_at.strftime("%m-%d-%Y %I:%M:%S %p") : nil
+    18: 
+    19: %h3 Customer Orders
+  app/views/customers/show.html.haml:16:in `_app_views_customers_show_html_haml___1158856254543350363_70132017769360'
+  app/controllers/customers_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (342.4ms)[0m  [1mDROP TABLE `customers`[0m
+  [1m[35m (82.7ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fname` varchar(255) NOT NULL, `lname` varchar(255) NOT NULL, `age` int(11) NOT NULL, `dob` date NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (8.4ms)[0m  [1mDROP TABLE `logs`[0m
+  [1m[35m (267.1ms)[0m  CREATE TABLE `logs` (`script_name` varchar(255) NOT NULL, `message` varchar(255) NOT NULL, `status` varchar(60), `load_date` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.7ms)[0m  [1mDROP TABLE `order_products`[0m
+  [1m[35m (60.0ms)[0m  CREATE TABLE `order_products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `orderid` int(11) NOT NULL, `product_id` int(11) NOT NULL, `quantity` int(11) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE `orders`[0m
+  [1m[35m (552.1ms)[0m  CREATE TABLE `orders` (`orderid` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `customer_id` int(11) NOT NULL, `order_placed` datetime NOT NULL, `order_total` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE `products`[0m
+  [1m[35m (467.3ms)[0m  CREATE TABLE `products` (`product_id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_description` varchar(100) NOT NULL, `product_price` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (27.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (294.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (15.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('0')
+Connecting to database specified by database.yml
+  [1m[36m (14.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (5.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1988-12-19', 'Steven', 'Arsena', '2013-12-05 02:53:26')[0m
+  [1m[35m (12.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (23, '2013-07-30 21:06:57', '1989-08-01', 'Aaron', 'Kirby', '2013-12-05 02:53:26')
+  [1m[36m (11.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1989-03-26', 'Patrick', 'Nolan', '2013-12-05 02:53:26')[0m
+  [1m[35m (7.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (1, '2013-07-31 15:22:49', 50.0, 123)
+  [1m[36m (11.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (4.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (3, '2013-07-31 15:22:49', 66.0, 124)[0m
+  [1m[35m (64.6ms)[0m  COMMIT
+  [1m[36m (6.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (2, '2013-07-31 15:22:49', 2.5, 125)
+  [1m[36m (41.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (1, '2013-07-31 15:22:49', 30.5, 126)[0m
+  [1m[35m (71.9ms)[0m  COMMIT
+  [1m[36m (1.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `order_products` (`orderid`, `product_id`, `quantity`) VALUES (123, 1, 1)
+  [1m[36m (16.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `order_products` (`orderid`, `product_id`, `quantity`) VALUES (123, 2, 1)[0m
+  [1m[35m (11.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `order_products` (`orderid`, `product_id`, `quantity`) VALUES (124, 1, 1)
+  [1m[36m (19.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `order_products` (`orderid`, `product_id`, `quantity`) VALUES (124, 4, 1)[0m
+  [1m[35m (16.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `order_products` (`orderid`, `product_id`, `quantity`) VALUES (124, 3, 1)
+  [1m[36m (13.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `order_products` (`orderid`, `product_id`, `quantity`) VALUES (125, 5, 1)[0m
+  [1m[35m (18.3ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `order_products` (`orderid`, `product_id`, `quantity`) VALUES (126, 3, 1)
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `order_products` (`orderid`, `product_id`, `quantity`) VALUES (126, 2, 1)[0m
+  [1m[35m (8.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Cocaine', 1, 30.0)
+  [1m[36m (67.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (2.1ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Meth', 2, 20.0)[0m
+  [1m[35m (18.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Marijuana', 3, 10.5)
+  [1m[36m (13.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Heroin', 4, 25.5)[0m
+  [1m[35m (21.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Salvia', 5, 2.5)
+  [1m[36m (44.1ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/customers/1" for 127.7.246.129 at 2013-12-04 21:53:48 -0500
+Connecting to database specified by database.yml
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1
+  Rendered customers/show.html.haml within layouts/application (321.2ms)
+Completed 200 OK in 1194ms (Views: 704.6ms | ActiveRecord: 99.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /application.css - 304 Not Modified (59ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /customers.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /orders.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /bootstrap - 304 Not Modified (234ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /orders.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /customers.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:53:52 -0500
+Served asset /application.js - 304 Not Modified (26ms)
+
+
+Started GET "/orders/123" for 127.7.246.129 at 2013-12-04 21:53:55 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`orderid` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.6ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+Mysql2::Error: Unknown column 'order_products.order_id' in 'where clause': SELECT `order_products`.* FROM `order_products`  WHERE `order_products`.`order_id` = 123
+  Rendered orders/show.html.haml within layouts/application (361.5ms)
+Completed 500 Internal Server Error in 367ms
+
+ActionView::Template::Error (Mysql2::Error: Unknown column 'order_products.order_id' in 'where clause': SELECT `order_products`.* FROM `order_products`  WHERE `order_products`.`order_id` = 123):
+    13:     %th Product Description
+    14:     %th Product Price
+    15:     %th Quantity
+    16:   - OrderProduct.product(@order.id).each do |order_product|
+    17:     %tr
+    18:       - Product.products(order_product.product_id).each do |product|
+    19:         %td=product.product_description
+  app/views/orders/show.html.haml:16:in `_app_views_orders_show_html_haml___1513783548331491555_70211977949860'
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.9ms)
+Connecting to database specified by database.yml
+  [1m[36m (13.7ms)[0m  [1mDROP TABLE `customers`[0m
+  [1m[35m (51.2ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fname` varchar(255) NOT NULL, `lname` varchar(255) NOT NULL, `age` int(11) NOT NULL, `dob` date NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (23.5ms)[0m  [1mDROP TABLE `logs`[0m
+  [1m[35m (39.4ms)[0m  CREATE TABLE `logs` (`script_name` varchar(255) NOT NULL, `message` varchar(255) NOT NULL, `status` varchar(60), `load_date` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (12.3ms)[0m  [1mDROP TABLE `order_products`[0m
+  [1m[35m (19.8ms)[0m  CREATE TABLE `order_products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11) NOT NULL, `product_id` int(11) NOT NULL, `quantity` int(11) NOT NULL) ENGINE=InnoDB
+  [1m[36m (6.9ms)[0m  [1mDROP TABLE `orders`[0m
+  [1m[35m (26.3ms)[0m  CREATE TABLE `orders` (`orderid` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `customer_id` int(11) NOT NULL, `order_placed` datetime NOT NULL, `order_total` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (8.8ms)[0m  [1mDROP TABLE `products`[0m
+  [1m[35m (34.7ms)[0m  CREATE TABLE `products` (`product_id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_description` varchar(100) NOT NULL, `product_price` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.5ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+Connecting to database specified by database.yml
+  [1m[36m (16.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1988-12-19', 'Steven', 'Arsena', '2013-12-05 02:55:29')[0m
+  [1m[35m (27.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (23, '2013-07-30 21:06:57', '1989-08-01', 'Aaron', 'Kirby', '2013-12-05 02:55:29')
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1989-03-26', 'Patrick', 'Nolan', '2013-12-05 02:55:29')[0m
+  [1m[35m (65.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (1, '2013-07-31 15:22:49', 50.0, 123)
+  [1m[36m (10.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (3, '2013-07-31 15:22:49', 66.0, 124)[0m
+  [1m[35m (6.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (2, '2013-07-31 15:22:49', 2.5, 125)
+  [1m[36m (7.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (1, '2013-07-31 15:22:49', 30.5, 126)[0m
+  [1m[35m (76.7ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (7.0ms)[0m  [1mDROP TABLE `customers`[0m
+  [1m[35m (68.9ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fname` varchar(255) NOT NULL, `lname` varchar(255) NOT NULL, `age` int(11) NOT NULL, `dob` date NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (19.7ms)[0m  [1mDROP TABLE `logs`[0m
+  [1m[35m (30.4ms)[0m  CREATE TABLE `logs` (`script_name` varchar(255) NOT NULL, `message` varchar(255) NOT NULL, `status` varchar(60), `load_date` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (12.4ms)[0m  [1mDROP TABLE `order_products`[0m
+  [1m[35m (24.9ms)[0m  CREATE TABLE `order_products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11) NOT NULL, `product_id` int(11) NOT NULL, `quantity` int(11) NOT NULL) ENGINE=InnoDB
+  [1m[36m (6.9ms)[0m  [1mDROP TABLE `orders`[0m
+  [1m[35m (44.6ms)[0m  CREATE TABLE `orders` (`orderid` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `customer_id` int(11) NOT NULL, `order_placed` datetime NOT NULL, `order_total` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (18.9ms)[0m  [1mDROP TABLE `products`[0m
+  [1m[35m (22.0ms)[0m  CREATE TABLE `products` (`product_id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_description` varchar(100) NOT NULL, `product_price` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+Connecting to database specified by database.yml
+  [1m[36m (4.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1988-12-19', 'Steven', 'Arsena', '2013-12-05 02:56:27')[0m
+  [1m[35m (24.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (23, '2013-07-30 21:06:57', '1989-08-01', 'Aaron', 'Kirby', '2013-12-05 02:56:27')
+  [1m[36m (8.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1989-03-26', 'Patrick', 'Nolan', '2013-12-05 02:56:27')[0m
+  [1m[35m (11.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (1, '2013-07-31 15:22:49', 50.0, 123)
+  [1m[36m (9.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (3, '2013-07-31 15:22:49', 66.0, 124)[0m
+  [1m[35m (14.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (47.1ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (2, '2013-07-31 15:22:49', 2.5, 125)
+  [1m[36m (8.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`, `orderid`) VALUES (1, '2013-07-31 15:22:49', 30.5, 126)[0m
+  [1m[35m (18.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (123, 1, 1)
+  [1m[36m (8.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (123, 2, 1)[0m
+  [1m[35m (7.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 1, 1)
+  [1m[36m (13.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 4, 1)[0m
+  [1m[35m (44.2ms)[0m  COMMIT
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 3, 1)
+  [1m[36m (9.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (125, 5, 1)[0m
+  [1m[35m (19.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (126, 3, 1)
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (126, 2, 1)[0m
+  [1m[35m (9.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Cocaine', 1, 30.0)
+  [1m[36m (9.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Meth', 2, 20.0)[0m
+  [1m[35m (10.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Marijuana', 3, 10.5)
+  [1m[36m (50.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Heroin', 4, 25.5)[0m
+  [1m[35m (7.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`product_description`, `product_id`, `product_price`) VALUES ('Salvia', 5, 2.5)
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/orders/123" for 127.7.246.129 at 2013-12-04 21:56:51 -0500
+Connecting to database specified by database.yml
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`orderid` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+Mysql2::Error: Unknown column 'products.id' in 'where clause': SELECT `products`.* FROM `products`  WHERE `products`.`id` = 1
+  Rendered orders/show.html.haml within layouts/application (394.8ms)
+Completed 500 Internal Server Error in 802ms
+
+ActionView::Template::Error (Mysql2::Error: Unknown column 'products.id' in 'where clause': SELECT `products`.* FROM `products`  WHERE `products`.`id` = 1):
+    15:     %th Quantity
+    16:   - OrderProduct.product(@order.id).each do |order_product|
+    17:     %tr
+    18:       - Product.products(order_product.product_id).each do |product|
+    19:         %td=product.product_description
+    20:         %td=product.product_price
+    21:       %td= order_product.quantity
+  app/views/orders/show.html.haml:18:in `block in _app_views_orders_show_html_haml___18706400787974902_70303414834700'
+  app/views/orders/show.html.haml:16:in `_app_views_orders_show_html_haml___18706400787974902_70303414834700'
+  app/controllers/orders_controller.rb:17:in `show'
+
+
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /opt/rh/ruby193/root/usr/share/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.8ms)
+Connecting to database specified by database.yml
+  [1m[36m (13.3ms)[0m  [1mDROP TABLE `customers`[0m
+  [1m[35m (100.8ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fname` varchar(255) NOT NULL, `lname` varchar(255) NOT NULL, `age` int(11) NOT NULL, `dob` date NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (15.3ms)[0m  [1mDROP TABLE `logs`[0m
+  [1m[35m (26.6ms)[0m  CREATE TABLE `logs` (`script_name` varchar(255) NOT NULL, `message` varchar(255) NOT NULL, `status` varchar(60), `load_date` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (17.2ms)[0m  [1mDROP TABLE `order_products`[0m
+  [1m[35m (43.5ms)[0m  CREATE TABLE `order_products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11) NOT NULL, `product_id` int(11) NOT NULL, `quantity` int(11) NOT NULL) ENGINE=InnoDB
+  [1m[36m (8.4ms)[0m  [1mDROP TABLE `orders`[0m
+  [1m[35m (56.1ms)[0m  CREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `customer_id` int(11) NOT NULL, `order_placed` datetime NOT NULL, `order_total` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (24.3ms)[0m  [1mDROP TABLE `products`[0m
+  [1m[35m (21.6ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_description` varchar(100) NOT NULL, `product_price` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+Connecting to database specified by database.yml
+  [1m[36m (3.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1988-12-19', 'Steven', 'Arsena', '2013-12-05 02:58:57')[0m
+  [1m[35m (85.4ms)[0m  COMMIT
+  [1m[36m (2.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (23, '2013-07-30 21:06:57', '1989-08-01', 'Aaron', 'Kirby', '2013-12-05 02:58:57')
+  [1m[36m (11.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1989-03-26', 'Patrick', 'Nolan', '2013-12-05 02:58:57')[0m
+  [1m[35m (25.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `orders` (`customer_id`, `id`, `order_placed`, `order_total`) VALUES (1, 123, '2013-07-31 15:22:49', 50.0)
+  [1m[36m (10.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `id`, `order_placed`, `order_total`) VALUES (3, 124, '2013-07-31 15:22:49', 66.0)[0m
+  [1m[35m (7.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (52.6ms)[0m  INSERT INTO `orders` (`customer_id`, `id`, `order_placed`, `order_total`) VALUES (2, 125, '2013-07-31 15:22:49', 2.5)
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `id`, `order_placed`, `order_total`) VALUES (1, 126, '2013-07-31 15:22:49', 30.5)[0m
+  [1m[35m (70.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (123, 1, 1)
+  [1m[36m (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (123, 2, 1)[0m
+  [1m[35m (8.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (65.3ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 1, 1)
+  [1m[36m (57.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 4, 1)[0m
+  [1m[35m (13.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 3, 1)
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (125, 5, 1)[0m
+  [1m[35m (5.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.4ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (126, 3, 1)
+  [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (126, 2, 1)[0m
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36m (2.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (1, 'Cocaine', 30.0)
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (2, 'Meth', 20.0)[0m
+  [1m[35m (8.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (3, 'Marijuana', 10.5)
+  [1m[36m (7.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (4, 'Heroin', 25.5)[0m
+  [1m[35m (60.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (5, 'Salvia', 2.5)
+  [1m[36m (125.2ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/orders/123" for 127.7.246.129 at 2013-12-04 21:59:18 -0500
+Connecting to database specified by database.yml
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.7ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.3ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (71.8ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (376.6ms)
+Completed 200 OK in 1012ms (Views: 523.8ms | ActiveRecord: 119.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:22 -0500
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:22 -0500
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:22 -0500
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:22 -0500
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:59:22 -0500
+Served asset /bootstrap - 304 Not Modified (95ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:22 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:23 -0500
+Served asset /customers.js - 304 Not Modified (108ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:23 -0500
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:23 -0500
+Served asset /orders.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/orders/123/edit" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Processing by OrdersController#edit as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1[0m
+  Rendered orders/_form.html.haml (50.3ms)
+  Rendered orders/edit.html.haml within layouts/application (79.6ms)
+Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /customers.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /customers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:59:29 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/orders" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (1.4ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 182ms (Views: 177.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /customers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:32 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders/124" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"124"}
+  [1m[36mOrder Load (2.0ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 124 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.5ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 124
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 4
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3[0m
+  Rendered orders/show.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 97ms (Views: 91.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Served asset /customers.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:39 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:40 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:59:40 -0500
+Served asset /bootstrap - 304 Not Modified (2ms)
+
+
+Started GET "/orders" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /orders.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:59:41 -0500
+Served asset /bootstrap - 304 Not Modified (76ms)
+
+
+Started GET "/orders/new" for 127.7.246.129 at 2013-12-04 21:59:42 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (19.2ms)
+  Rendered orders/new.html.haml within layouts/application (70.9ms)
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /bootstrap - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:43 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders" for 127.7.246.129 at 2013-12-04 21:59:51 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (2.4ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:51 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:51 -0500
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:51 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:52 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.7.246.129 at 2013-12-04 21:59:52 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:52 -0500
+Served asset /customers.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:52 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.7.246.129 at 2013-12-04 21:59:52 -0500
+Served asset /bootstrap - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:52 -0500
+Served asset /application.js - 304 Not Modified (1ms)
