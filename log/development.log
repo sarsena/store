@@ -19210,3 +19210,80 @@ Served asset /bootstrap - 304 Not Modified (11ms)
 
 Started GET "/assets/application.js?body=1" for 127.7.246.129 at 2013-12-04 21:59:52 -0500
 Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (67.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (72.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (7.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (45.1ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fname` varchar(255) NOT NULL, `lname` varchar(255) NOT NULL, `age` int(11) NOT NULL, `dob` date NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (29.5ms)[0m  CREATE TABLE `logs` (`script_name` varchar(255) NOT NULL, `message` varchar(255) NOT NULL, `status` varchar(60), `load_date` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (19.3ms)[0m  [1mCREATE TABLE `order_products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11) NOT NULL, `product_id` int(11) NOT NULL, `quantity` int(11) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (16.6ms)[0m  CREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `customer_id` int(11) NOT NULL, `order_placed` datetime NOT NULL, `order_total` float NOT NULL) ENGINE=InnoDB
+  [1m[36m (15.8ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_description` varchar(100) NOT NULL, `product_price` float NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (6.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+Connecting to database specified by database.yml
+  [1m[36m (3.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (92.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1988-12-19', 'Steven', 'Arsena', '2013-12-19 22:03:58')[0m
+  [1m[35m (16.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (23, '2013-07-30 21:06:57', '1989-08-01', 'Aaron', 'Kirby', '2013-12-19 22:03:58')
+  [1m[36m (29.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `customers` (`age`, `created_at`, `dob`, `fname`, `lname`, `updated_at`) VALUES (24, '2013-07-30 21:06:57', '1989-03-26', 'Patrick', 'Nolan', '2013-12-19 22:03:58')[0m
+  [1m[35m (6.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (30.5ms)[0m  INSERT INTO `orders` (`customer_id`, `id`, `order_placed`, `order_total`) VALUES (1, 123, '2013-07-31 15:22:49', 50.0)
+  [1m[36m (9.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `id`, `order_placed`, `order_total`) VALUES (3, 124, '2013-07-31 15:22:49', 66.0)[0m
+  [1m[35m (14.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `orders` (`customer_id`, `id`, `order_placed`, `order_total`) VALUES (2, 125, '2013-07-31 15:22:49', 2.5)
+  [1m[36m (27.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `id`, `order_placed`, `order_total`) VALUES (1, 126, '2013-07-31 15:22:49', 30.5)[0m
+  [1m[35m (18.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (123, 1, 1)
+  [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (43.3ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (123, 2, 1)[0m
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 1, 1)
+  [1m[36m (26.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 4, 1)[0m
+  [1m[35m (6.9ms)[0m  COMMIT
+  [1m[36m (2.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (124, 3, 1)
+  [1m[36m (9.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (125, 5, 1)[0m
+  [1m[35m (7.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (126, 3, 1)
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (126, 2, 1)[0m
+  [1m[35m (25.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (1, 'Cocaine', 30.0)
+  [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (2, 'Meth', 20.0)[0m
+  [1m[35m (6.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (3, 'Marijuana', 10.5)
+  [1m[36m (8.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (4, 'Heroin', 25.5)[0m
+  [1m[35m (4.4ms)[0m  COMMIT
+  [1m[36m (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `products` (`id`, `product_description`, `product_price`) VALUES (5, 'Salvia', 2.5)
+  [1m[36m (11.5ms)[0m  [1mCOMMIT[0m
