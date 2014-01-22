@@ -5,12 +5,14 @@
       %ul
         - @order.errors.full_messages.each do |msg|
           %li= msg
-  =select "products", "product_description", options_for_select(Product.all.collect {|n| [n.product_description, n.product_description]})
+  =select "products", "product_description", Product.all.collect {|n| [n.product_description, n.product_price]}, {include_blank: 'None'}
+  =text_field :quantity, nil, :placeholder => "Quantity"
   %div.add-product
     %p Add Product
   %table
     %tr
       %th Product Description
+      %th Product Quantity
       %th Product Price
     %tbody.products
   .actions

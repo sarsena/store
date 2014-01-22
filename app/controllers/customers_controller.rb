@@ -9,7 +9,7 @@ class CustomersController < ApplicationController
       format.json { render json: @customers }
     end
   end
-
+    
   # GET /customers/1
   # GET /customers/1.json
   def show
