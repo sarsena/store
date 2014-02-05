@@ -24031,3 +24031,3901 @@ Served asset /bootstrap - 304 Not Modified (24ms)
 
 Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-01-28 22:43:18 -0500
 Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails.png" for 127.8.125.1 at 2014-02-04 21:05:17 -0500
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (7ms)
+
+
+Started GET "/customers" for 127.8.125.1 at 2014-02-04 21:05:21 -0500
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (39.2ms)[0m  [1mSELECT `customers`.* FROM `customers` [0m
+  Rendered customers/index.html.haml within layouts/application (40.9ms)
+Completed 200 OK in 925ms (Views: 431.9ms | ActiveRecord: 215.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:22 -0500
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:22 -0500
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:22 -0500
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:22 -0500
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:22 -0500
+Served asset /orders.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (94ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:23 -0500
+Served asset /jquery.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:23 -0500
+Served asset /application.js - 304 Not Modified (149ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:05:23 -0500
+Served asset /bootstrap - 304 Not Modified (134ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:23 -0500
+Served asset /customers.js - 304 Not Modified (2ms)
+
+
+Started GET "/customers/1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCustomer Load (0.6ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mOrder Load (21.7ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1[0m
+  Rendered customers/show.html.haml within layouts/application (332.1ms)
+Completed 200 OK in 374ms (Views: 329.0ms | ActiveRecord: 42.0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:05:26 -0500
+Served asset /bootstrap - 304 Not Modified (12ms)
+
+
+Started GET "/orders/123" for 127.8.125.1 at 2014-02-04 21:05:28 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[35mOrder Load (5.5ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 123 LIMIT 1
+  [1m[36mOrderProduct Load (0.4ms)[0m  [1mSELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 123[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1
+  [1m[36mProduct Load (1.5ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2[0m
+  Rendered orders/show.html.haml within layouts/application (276.1ms)
+Completed 200 OK in 326ms (Views: 250.5ms | ActiveRecord: 73.6ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:28 -0500
+Served asset /customers.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:28 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:28 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:28 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:28 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:28 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:29 -0500
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:29 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:05:29 -0500
+Served asset /bootstrap - 304 Not Modified (5ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (5.0ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 57ms (Views: 50.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /bootstrap - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:31 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:05:33 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (5.0ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (29.9ms)
+  Rendered orders/new.html.haml within layouts/application (59.2ms)
+Completed 200 OK in 103ms (Views: 97.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:33 -0500
+Served asset /customers.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:33 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:33 -0500
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:34 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:05:34 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:34 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:34 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:05:34 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:05:34 -0500
+Served asset /bootstrap - 304 Not Modified (11ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:05:47 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Meth", "quantity"=>"2", "price"=>" $40"}, "1"=>{"name"=>"Cocaine", "quantity"=>"2", "price"=>" $60"}}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/orders_controller.rb:46:in `block in create'
+  app/controllers/orders_controller.rb:45:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (80.2ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:36:16 -0500
+Connecting to database specified by database.yml
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (21.7ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (191.2ms)
+  Rendered orders/new.html.haml within layouts/application (249.0ms)
+Completed 200 OK in 1441ms (Views: 935.9ms | ActiveRecord: 168.0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:36:21 -0500
+Served asset /customers.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:36:21 -0500
+Served asset /application.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:36:21 -0500
+Served asset /orders.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:36:21 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (80ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:36:21 -0500
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:36:22 -0500
+Served asset /orders.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:36:22 -0500
+Served asset /customers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:36:22 -0500
+Served asset /application.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:36:22 -0500
+Served asset /bootstrap - 304 Not Modified (429ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:36:22 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:36:28 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"2", "price"=>" $60"}, "1"=>{"name"=>"Marijuana", "quantity"=>"2", "price"=>" $21"}}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/orders_controller.rb:46:in `block in create'
+  app/controllers/orders_controller.rb:45:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (81.4ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:38:50 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (4.9ms)
+  Rendered orders/new.html.haml within layouts/application (7.6ms)
+Compiled orders.js  (1021ms)  (pid 314050)
+Compiled application.js  (14ms)  (pid 314050)
+Completed 200 OK in 1458ms (Views: 1456.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:38:51 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /orders.js - 200 OK (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /application.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:38:52 -0500
+Served asset /bootstrap - 304 Not Modified (10ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:38:59 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"2", "price"=>" $60"}, "1"=>{"name"=>"Cocaine", "quantity"=>"3", "price"=>" $90"}}, "order_total"=>"0 $60 $90"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/orders_controller.rb:46:in `block in create'
+  app/controllers/orders_controller.rb:45:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.7ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:39:44 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (5.7ms)
+  Rendered orders/new.html.haml within layouts/application (7.8ms)
+Compiled orders.js  (1014ms)  (pid 314050)
+Compiled application.js  (9ms)  (pid 314050)
+Completed 200 OK in 1423ms (Views: 1421.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:39:45 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:39:45 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:39:45 -0500
+Served asset /customers.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:39:45 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:39:45 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:39:45 -0500
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:39:45 -0500
+Served asset /application.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:39:45 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:39:46 -0500
+Served asset /orders.js - 200 OK (35ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:39:46 -0500
+Served asset /bootstrap - 304 Not Modified (12ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:40:42 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (5.7ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (15.7ms)
+  Rendered orders/new.html.haml within layouts/application (24.9ms)
+Compiled orders.js  (1196ms)  (pid 314050)
+Compiled application.js  (20ms)  (pid 314050)
+Completed 200 OK in 1552ms (Views: 1545.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /customers.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /orders.js - 200 OK (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /application.js - 304 Not Modified (41ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:40:44 -0500
+Served asset /bootstrap - 304 Not Modified (124ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:40:51 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"2", "price"=>"60"}, "1"=>{"name"=>"Meth", "quantity"=>"3", "price"=>"60"}}, "order_total"=>"06060"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/orders_controller.rb:46:in `block in create'
+  app/controllers/orders_controller.rb:45:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (84.7ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:42:22 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (34.7ms)
+  Rendered orders/new.html.haml within layouts/application (36.5ms)
+Compiled orders.js  (1137ms)  (pid 314050)
+Compiled application.js  (23ms)  (pid 314050)
+Completed 200 OK in 1346ms (Views: 1344.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /orders.js - 200 OK (22ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /application.js - 304 Not Modified (60ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:42:24 -0500
+Served asset /bootstrap - 304 Not Modified (11ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:42:30 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Meth", "quantity"=>"2", "price"=>"40"}, "1"=>{"name"=>"Heroin", "quantity"=>"3", "price"=>"76.5"}}, "order_total"=>"116.5"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/orders_controller.rb:46:in `block in create'
+  app/controllers/orders_controller.rb:45:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (86.3ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:48:58 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (3.7ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (71.8ms)
+  Rendered orders/new.html.haml within layouts/application (98.8ms)
+Compiled orders.js  (1091ms)  (pid 314050)
+Compiled application.js  (43ms)  (pid 314050)
+Completed 200 OK in 1623ms (Views: 1526.5ms | ActiveRecord: 84.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:49:00 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:49:00 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:49:00 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:49:01 -0500
+Served asset /bootstrap - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:01 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:01 -0500
+Served asset /jquery.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:01 -0500
+Served asset /customers.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:49:01 -0500
+Served asset /customers.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:01 -0500
+Served asset /orders.js - 200 OK (26ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:01 -0500
+Served asset /application.js - 304 Not Modified (212ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:49:11 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Meth", "quantity"=>"23", "price"=>"460"}, "1"=>{"name"=>"Meth", "quantity"=>"12", "price"=>"240"}}, "order_total"=>"700"}
+Completed 500 Internal Server Error in 7ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: order_place):
+  app/controllers/orders_controller.rb:42:in `new'
+  app/controllers/orders_controller.rb:42:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.5ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.9ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (87.3ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:49:31 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (100.6ms)
+  Rendered orders/new.html.haml within layouts/application (105.8ms)
+Completed 200 OK in 241ms (Views: 131.3ms | ActiveRecord: 41.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:49:31 -0500
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:49:31 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:49:31 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:49:31 -0500
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:31 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:31 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:49:32 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:32 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:49:32 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:49:38 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Meth", "quantity"=>"2", "price"=>"40"}, "1"=>{"name"=>"Cocaine", "quantity"=>"3", "price"=>"90"}}, "order_total"=>"130"}
+  [1m[35m (13.0ms)[0m  BEGIN
+  [1m[36mSQL (133.6ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 21:49:38', 130.0)[0m
+  [1m[35m (74.4ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders/127
+Completed 302 Found in 407ms (ActiveRecord: 221.0ms)
+
+
+Started GET "/orders/127" for 127.8.125.1 at 2014-02-04 21:49:39 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"127"}
+  [1m[36mOrder Load (3.4ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 127 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.4ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 127
+  Rendered orders/show.html.haml within layouts/application (154.3ms)
+Completed 200 OK in 191ms (Views: 147.4ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:51:06 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (5.7ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (22.7ms)
+  Rendered orders/new.html.haml within layouts/application (63.0ms)
+Completed 200 OK in 260ms (Views: 218.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:51:06 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /bootstrap - 304 Not Modified (49ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:07 -0500
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:51:12 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"None", "quantity"=>"", "price"=>"0"}, "1"=>{"name"=>"Meth", "quantity"=>"", "price"=>"0"}}, "order_total"=>"0"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 21:51:12', 0.0)[0m
+  [1m[35m (78.3ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders/128
+Completed 302 Found in 117ms (ActiveRecord: 79.0ms)
+
+
+Started GET "/orders/128" for 127.8.125.1 at 2014-02-04 21:51:12 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"128"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 128 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.5ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 128
+  Rendered orders/show.html.haml within layouts/application (27.1ms)
+Completed 200 OK in 147ms (Views: 121.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:51:43 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (11.5ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (92.4ms)
+  Rendered orders/new.html.haml within layouts/application (104.1ms)
+Completed 200 OK in 234ms (Views: 147.9ms | ActiveRecord: 61.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /application.js - 304 Not Modified (161ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:51:44 -0500
+Served asset /bootstrap - 304 Not Modified (17ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:51:49 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Meth", "quantity"=>"23", "price"=>"460"}, "1"=>{"name"=>"Marijuana", "quantity"=>"2", "price"=>"21"}}, "order_total"=>"481"}
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (uncaught throw #<Order id: nil, customer_id: 1, order_placed: "2014-02-04 21:51:49", order_total: 481.0>):
+  app/controllers/orders_controller.rb:44:in `throw'
+  app/controllers/orders_controller.rb:44:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (40.3ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.4ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (4.8ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (65.5ms)
+  Rendered orders/new.html.haml within layouts/application (100.3ms)
+Completed 200 OK in 240ms (Views: 152.7ms | ActiveRecord: 67.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:52:36 -0500
+Served asset /bootstrap - 304 Not Modified (10ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:52:39 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"2", "price"=>"60"}}, "order_total"=>"60"}
+Completed 500 Internal Server Error in 15ms
+
+ArgumentError (uncaught throw #<Order id: nil, customer_id: 1, order_placed: "2014-02-04 21:52:39", order_total: 60.0>):
+  app/controllers/orders_controller.rb:44:in `throw'
+  app/controllers/orders_controller.rb:44:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.4ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.2ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:52:51 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (4.4ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (86.5ms)
+  Rendered orders/new.html.haml within layouts/application (93.0ms)
+Completed 200 OK in 197ms (Views: 96.2ms | ActiveRecord: 67.8ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:52:52 -0500
+Served asset /bootstrap - 304 Not Modified (11ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:52:58 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Meth", "quantity"=>"2", "price"=>"40"}, "1"=>{"name"=>"Cocaine", "quantity"=>"3", "price"=>"90"}}, "order_total"=>"130"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 21:52:58', 130.0)[0m
+  [1m[35m (17.0ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 26ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:52:58 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (6.0ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (19.8ms)
+Completed 200 OK in 141ms (Views: 131.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:53:35 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (1.1ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (6.1ms)
+  Rendered orders/new.html.haml within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 1394ms
+
+ActionView::Template::Error (Error: Parse error on line 18: Unexpected ','
+  (in /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/730653/app/assets/javascripts/orders.js.coffee)):
+    3: <head>
+    4:   <title>Store</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2335845952233185476_32273600'
+  app/controllers/orders_controller.rb:28:in `new'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.6ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.6ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:53:55 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (11.1ms)
+  Rendered orders/new.html.haml within layouts/application (21.0ms)
+Compiled orders.js  (1305ms)  (pid 314050)
+Compiled application.js  (56ms)  (pid 314050)
+Completed 200 OK in 1692ms (Views: 1687.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /customers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /orders.js - 200 OK (13ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /application.js - 304 Not Modified (192ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:53:57 -0500
+Served asset /bootstrap - 304 Not Modified (45ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:53:58 -0500
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:54:04 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"23", "price"=>"690"}}, "order_total"=>"690"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 21:54:04', 690.0)[0m
+  [1m[35m (69.4ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 120ms (ActiveRecord: 73.6ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:54:04 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 79ms (Views: 70.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:55:38 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (4.6ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (97.8ms)
+  Rendered orders/new.html.haml within layouts/application (100.4ms)
+Compiled orders.js  (1565ms)  (pid 314050)
+Compiled application.js  (78ms)  (pid 314050)
+Completed 200 OK in 2288ms (Views: 2141.9ms | ActiveRecord: 66.3ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /customers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /orders.js - 200 OK (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:55:41 -0500
+Served asset /bootstrap - 304 Not Modified (8ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:55:47 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"None", "quantity"=>"", "price"=>"0"}, "1"=>{"name"=>"Meth", "quantity"=>"23", "price"=>"460"}}, "order_total"=>"460"}
+  [1m[36m (9.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 21:55:47', 460.0)
+  [1m[36m (31.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 56ms (ActiveRecord: 43.1ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (3.4ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 62ms (Views: 51.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (48.7ms)
+Completed 200 OK in 88ms (Views: 84.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:55:48 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/127" for 127.8.125.1 at 2014-02-04 21:56:26 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"127"}
+  [1m[35mOrder Load (1.2ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 127 LIMIT 1
+  [1m[36mOrderProduct Load (0.4ms)[0m  [1mSELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 127[0m
+  Rendered orders/show.html.haml within layouts/application (95.6ms)
+Completed 200 OK in 299ms (Views: 77.1ms | ActiveRecord: 144.3ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:56:27 -0500
+Served asset /bootstrap - 304 Not Modified (181ms)
+
+
+Started GET "/orders/127/edit" for 127.8.125.1 at 2014-02-04 21:56:30 -0500
+Processing by OrdersController#edit as HTML
+  Parameters: {"id"=>"127"}
+  [1m[35mOrder Load (4.9ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 127 LIMIT 1
+  Rendered orders/_form.html.haml (7.5ms)
+  Rendered orders/edit.html.haml within layouts/application (36.1ms)
+Completed 200 OK in 104ms (Views: 93.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /application.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:56:31 -0500
+Served asset /bootstrap - 304 Not Modified (11ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:56:33 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (18.8ms)
+Completed 200 OK in 79ms (Views: 64.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /orders.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /bootstrap - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:34 -0500
+Served asset /jquery.js - 304 Not Modified (25ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:56:35 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (7.6ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (89.6ms)
+  Rendered orders/new.html.haml within layouts/application (91.8ms)
+Completed 200 OK in 243ms (Views: 189.2ms | ActiveRecord: 52.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /bootstrap - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:36 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:56:43 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Marijuana", "quantity"=>"23", "price"=>"241.5"}, "1"=>{"name"=>"Marijuana", "quantity"=>"23", "price"=>"241.5"}}, "order_total"=>"483"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 21:56:43', 483.0)
+  [1m[36m (144.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 157ms (ActiveRecord: 148.8ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:56:43 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (4.0ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 44ms (Views: 37.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (1.2ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 48ms (Views: 43.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /customers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /orders.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:56:44 -0500
+Served asset /bootstrap - 304 Not Modified (5ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 21:57:17 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (109.5ms)
+  Rendered orders/new.html.haml within layouts/application (118.0ms)
+Completed 200 OK in 222ms (Views: 129.8ms | ActiveRecord: 45.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /bootstrap - 304 Not Modified (62ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:18 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 21:57:25 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"23", "price"=>"690"}, "1"=>{"name"=>"Meth", "quantity"=>"23", "price"=>"460"}}, "order_total"=>"1150"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 21:57:25', 1150.0)
+  [1m[36m (47.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 64ms (ActiveRecord: 49.5ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:57:25 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (12.5ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 98ms (Views: 82.8ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 21:57:25 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 55ms (Views: 45.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:25 -0500
+Served asset /orders.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:25 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:25 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:25 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:26 -0500
+Served asset /application.css - 304 Not Modified (85ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:26 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:26 -0500
+Served asset /application.js - 304 Not Modified (113ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:26 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:57:26 -0500
+Served asset /bootstrap - 304 Not Modified (13ms)
+
+
+Started GET "/orders/133" for 127.8.125.1 at 2014-02-04 21:57:47 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"133"}
+  [1m[35mOrder Load (2.4ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 133 LIMIT 1
+  [1m[36mOrderProduct Load (0.3ms)[0m  [1mSELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 133[0m
+  Rendered orders/show.html.haml within layouts/application (50.9ms)
+Completed 200 OK in 94ms (Views: 46.2ms | ActiveRecord: 45.5ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:47 -0500
+Served asset /customers.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:47 -0500
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:47 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:47 -0500
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 21:57:47 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:47 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:48 -0500
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 21:57:48 -0500
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 21:57:48 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:00:00 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (2.9ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (18.7ms)
+Completed 200 OK in 143ms (Views: 50.5ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:00:01 -0500
+Served asset /bootstrap - 304 Not Modified (11ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 22:00:02 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (101.7ms)
+  Rendered orders/new.html.haml within layouts/application (104.3ms)
+Completed 200 OK in 155ms (Views: 103.0ms | ActiveRecord: 50.6ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:00:03 -0500
+Served asset /bootstrap - 304 Not Modified (18ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:00:06 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"2", "price"=>"60"}}, "order_total"=>"60"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:00:06', 60.0)[0m
+  [1m[35m (49.1ms)[0m  COMMIT
+  [1m[36mProduct Load (56.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`product_description` = 'Cocaine' LIMIT 1[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 148ms (ActiveRecord: 106.3ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:00:06 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (9.8ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (85.6ms)
+Completed 200 OK in 252ms (Views: 239.1ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:00:07 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (13.7ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (38.9ms)
+Completed 200 OK in 171ms (Views: 146.5ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:07 -0500
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:07 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:08 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:08 -0500
+Served asset /customers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:00:08 -0500
+Served asset /orders.css - 304 Not Modified (117ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:00:08 -0500
+Served asset /bootstrap - 304 Not Modified (21ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:08 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:08 -0500
+Served asset /application.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:00:08 -0500
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.6ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (23.5ms)
+Completed 200 OK in 124ms (Views: 50.9ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /bootstrap - 304 Not Modified (7ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /customers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:15 -0500
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:16 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (77.0ms)
+  Rendered orders/new.html.haml within layouts/application (79.0ms)
+Completed 200 OK in 175ms (Views: 121.2ms | ActiveRecord: 52.4ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:14:18 -0500
+Served asset /bootstrap - 304 Not Modified (6ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:14:24 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Meth", "quantity"=>"2", "price"=>"40"}, "1"=>{"name"=>"Marijuana", "quantity"=>"3", "price"=>"31.5"}}, "order_total"=>"71.5"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:14:24', 71.5)[0m
+  [1m[35m (27.5ms)[0m  COMMIT
+Completed 500 Internal Server Error in 39ms
+
+NoMethodError (undefined method `name' for ["0", {"name"=>"Meth", "quantity"=>"2", "price"=>"40"}]:Array):
+  app/models/order_product.rb:10:in `block in add_new'
+  app/models/order_product.rb:9:in `each'
+  app/models/order_product.rb:9:in `add_new'
+  app/controllers/orders_controller.rb:45:in `block in create'
+  app/controllers/orders_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (76.2ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:14:55 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Meth", "quantity"=>"2", "price"=>"40"}, "1"=>{"name"=>"Marijuana", "quantity"=>"3", "price"=>"31.5"}}, "order_total"=>"71.5"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:14:55', 71.5)
+  [1m[36m (26.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 34ms
+
+NoMethodError (undefined method `name' for ["0", {"name"=>"Meth", "quantity"=>"2", "price"=>"40"}]:Array):
+  app/models/order_product.rb:10:in `block in add_new'
+  app/models/order_product.rb:9:in `each'
+  app/models/order_product.rb:9:in `add_new'
+  app/controllers/orders_controller.rb:45:in `block in create'
+  app/controllers/orders_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (1.0ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (5.5ms)
+  Rendered orders/new.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:15:00 -0500
+Served asset /bootstrap - 304 Not Modified (14ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:15:03 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"3", "price"=>"90"}}, "order_total"=>"90"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:15:03', 90.0)
+  [1m[36m (43.1ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 144ms
+
+NoMethodError (undefined method `name' for ["0", {"name"=>"Cocaine", "quantity"=>"3", "price"=>"90"}]:Array):
+  app/models/order_product.rb:10:in `block in add_new'
+  app/models/order_product.rb:9:in `each'
+  app/models/order_product.rb:9:in `add_new'
+  app/controllers/orders_controller.rb:45:in `block in create'
+  app/controllers/orders_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.5ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (94.6ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (41.0ms)
+  Rendered orders/new.html.haml within layouts/application (140.6ms)
+Completed 200 OK in 211ms (Views: 141.8ms | ActiveRecord: 47.0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /orders.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:15:58 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:16:02 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"23", "price"=>"690"}}, "order_total"=>"690"}
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:16:02', 690.0)
+  [1m[36m (29.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 58ms (ActiveRecord: 31.2ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:16:02 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 188ms (Views: 177.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:16:02 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /orders.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:16:03 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:17:07 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.6ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (49.1ms)
+Completed 200 OK in 79ms (Views: 72.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:07 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:07 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:07 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:07 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:07 -0500
+Served asset /customers.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:08 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:08 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:08 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:17:08 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 22:17:09 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (26.8ms)
+  Rendered orders/new.html.haml within layouts/application (56.4ms)
+Completed 200 OK in 129ms (Views: 127.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /application.css - 304 Not Modified (96ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:17:10 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:17:15 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Marijuana", "quantity"=>"3", "price"=>"31.5"}, "1"=>{"name"=>"Meth", "quantity"=>"2", "price"=>"40"}}, "order_total"=>"71.5"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:17:15', 71.5)[0m
+  [1m[35m (23.0ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 31ms (ActiveRecord: 25.4ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (33.9ms)
+Completed 200 OK in 52ms (Views: 46.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 99ms (Views: 91.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:16 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:17:17 -0500
+Served asset /bootstrap - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:17 -0500
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:17:17 -0500
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (77.4ms)
+Completed 200 OK in 213ms (Views: 93.3ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /bootstrap - 304 Not Modified (19ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:24 -0500
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 22:18:30 -0500
+Processing by OrdersController#new as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` 
+  Rendered orders/_newform.html.haml (60.4ms)
+  Rendered orders/new.html.haml within layouts/application (62.8ms)
+Completed 200 OK in 77ms (Views: 39.2ms | ActiveRecord: 36.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:30 -0500
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:30 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:30 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:31 -0500
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:31 -0500
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:31 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:31 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:18:31 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:31 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:31 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:18:36 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"23", "price"=>"690"}, "1"=>{"name"=>"Meth", "quantity"=>"2", "price"=>"40"}}, "order_total"=>"730"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:18:36', 730.0)
+  [1m[36m (37.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 50ms (ActiveRecord: 38.0ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:18:36 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 135ms (Views: 129.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (1.0ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (21.9ms)
+Completed 200 OK in 47ms (Views: 39.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:18:37 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:20:19 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (16.9ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (76.6ms)
+Completed 200 OK in 374ms (Views: 193.4ms | ActiveRecord: 114.3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:20:20 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:20:20 -0500
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:20:20 -0500
+Served asset /customers.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:20 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:20 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:20:20 -0500
+Served asset /scaffolds.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:21 -0500
+Served asset /orders.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:21 -0500
+Served asset /application.js - 304 Not Modified (172ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:20:21 -0500
+Served asset /bootstrap - 304 Not Modified (34ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:21 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 22:20:23 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (186.4ms)
+  Rendered orders/new.html.haml within layouts/application (209.9ms)
+Completed 200 OK in 270ms (Views: 130.5ms | ActiveRecord: 122.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:20:24 -0500
+Served asset /bootstrap - 304 Not Modified (16ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:20:32 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"23", "price"=>"690"}, "1"=>{"name"=>"Heroin", "quantity"=>"2", "price"=>"51"}}, "order_total"=>"741"}
+  [1m[35m (22.1ms)[0m  BEGIN
+  [1m[36mSQL (110.7ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:20:32', 741.0)[0m
+  [1m[35m (88.3ms)[0m  COMMIT
+Completed 500 Internal Server Error in 249ms
+
+NoMethodError (undefined method `name' for {"name"=>"Cocaine", "quantity"=>"23", "price"=>"690"}:ActiveSupport::HashWithIndifferentAccess):
+  app/models/order_product.rb:10:in `block in add_new'
+  app/models/order_product.rb:9:in `each'
+  app/models/order_product.rb:9:in `add_new'
+  app/controllers/orders_controller.rb:45:in `block in create'
+  app/controllers/orders_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.5ms)
+
+
+Started GET "/orders/new" for 127.8.125.1 at 2014-02-04 22:21:15 -0500
+Processing by OrdersController#new as HTML
+  [1m[36mProduct Load (10.5ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered orders/_newform.html.haml (161.7ms)
+  Rendered orders/new.html.haml within layouts/application (180.1ms)
+Completed 200 OK in 309ms (Views: 123.5ms | ActiveRecord: 88.6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /customers.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /customers.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /application.js - 304 Not Modified (54ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:16 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started POST "/orders" for 127.8.125.1 at 2014-02-04 22:21:23 -0500
+Processing by OrdersController#create as HTML
+  Parameters: {"products"=>{"0"=>{"name"=>"Cocaine", "quantity"=>"23", "price"=>"690"}, "1"=>{"name"=>"Meth", "quantity"=>"34", "price"=>"680"}}, "order_total"=>"1370"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `orders` (`customer_id`, `order_placed`, `order_total`) VALUES (1, '2014-02-04 22:21:23', 1370.0)[0m
+  [1m[35m (38.5ms)[0m  COMMIT
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`product_description` = 'Cocaine' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (142, 1, 23)[0m
+  [1m[35m (22.5ms)[0m  COMMIT
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`product_description` = 'Meth' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (42.9ms)[0m  [1mINSERT INTO `order_products` (`order_id`, `product_id`, `quantity`) VALUES (142, 2, 34)[0m
+  [1m[35m (9.3ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 203ms (ActiveRecord: 161.5ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:21:23 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 47ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /application.js - 304 Not Modified (124ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:21:24 -0500
+Served asset /bootstrap - 304 Not Modified (6ms)
+
+
+Started GET "/orders/142" for 127.8.125.1 at 2014-02-04 22:21:38 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"142"}
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 142 LIMIT 1[0m
+  [1m[35mOrderProduct Load (9.1ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 142
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (43.6ms)
+Completed 200 OK in 71ms (Views: 57.1ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /orders.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /application.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:21:39 -0500
+Served asset /bootstrap - 304 Not Modified (3ms)
+
+
+Started GET "/orders/142" for 127.8.125.1 at 2014-02-04 22:40:13 -0500
+Connecting to database specified by database.yml
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"142"}
+  [1m[36mOrder Load (12.6ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 142 LIMIT 1[0m
+  [1m[35mOrderProduct Load (0.4ms)[0m  SELECT `order_products`.* FROM `order_products` WHERE `order_products`.`order_id` = 142
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2
+  Rendered orders/show.html.haml within layouts/application (402.4ms)
+Completed 200 OK in 1567ms (Views: 840.9ms | ActiveRecord: 172.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:40:26 -0500
+Served asset /application.css - 304 Not Modified (79ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:40:26 -0500
+Served asset /orders.css - 304 Not Modified (83ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:40:26 -0500
+Served asset /customers.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:40:26 -0500
+Served asset /orders.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:40:26 -0500
+Served asset /customers.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:40:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:40:26 -0500
+Served asset /scaffolds.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:40:27 -0500
+Served asset /bootstrap - 304 Not Modified (258ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:40:27 -0500
+Served asset /application.js - 304 Not Modified (90ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:40:27 -0500
+Served asset /jquery.js - 304 Not Modified (208ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:40:37 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (176.0ms)
+Completed 500 Internal Server Error in 196ms
+
+ActionView::Template::Error (undefined local variable or method `destroy' for #<#<Class:0x007f2b043dccb0>:0x00000003f241f0>):
+    10:       %td= order.id
+    11:       %td= order.order_placed
+    12:       %td= link_to 'Show', order
+    13:       %td= link_to 'Destroy', destroy
+    14: %br
+    15: 
+    16: =link_to "New Order", new_order_path
+  app/views/orders/index.html.haml:13:in `block in _app_views_orders_index_html_haml__33259645440623096_24976380'
+  app/views/orders/index.html.haml:8:in `each'
+  app/views/orders/index.html.haml:8:in `_app_views_orders_index_html_haml__33259645440623096_24976380'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.2ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (50.6ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.6ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (44.7ms)
+Completed 200 OK in 176ms (Views: 169.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /customers.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /bootstrap - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:52 -0500
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/orders?method=delete" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Processing by OrdersController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (56.4ms)
+Completed 200 OK in 99ms (Views: 87.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /jquery.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:41:56 -0500
+Served asset /bootstrap - 304 Not Modified (19ms)
+
+
+Started GET "/orders?method=delete" for 127.8.125.1 at 2014-02-04 22:41:59 -0500
+Processing by OrdersController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[35mOrder Load (2.0ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (50.6ms)
+Completed 200 OK in 72ms (Views: 66.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:59 -0500
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:59 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:59 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:41:59 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:59 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:41:59 -0500
+Served asset /customers.js - 304 Not Modified (124ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:42:00 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:42:00 -0500
+Served asset /bootstrap - 304 Not Modified (77ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:42:00 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:42:00 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/orders?method=delete" for 127.8.125.1 at 2014-02-04 22:42:12 -0500
+Processing by OrdersController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionController::RoutingError (No route matches {:action=>"destroy", :controller=>"orders"}):
+  app/views/orders/index.html.haml:13:in `block in _app_views_orders_index_html_haml__33259645440623096_69911363782000'
+  app/views/orders/index.html.haml:8:in `each'
+  app/views/orders/index.html.haml:8:in `_app_views_orders_index_html_haml__33259645440623096_69911363782000'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/orders?method=delete" for 127.8.125.1 at 2014-02-04 22:42:19 -0500
+Processing by OrdersController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionController::RoutingError (No route matches {:action=>"delete", :controller=>"orders"}):
+  app/views/orders/index.html.haml:13:in `block in _app_views_orders_index_html_haml__33259645440623096_69911364399420'
+  app/views/orders/index.html.haml:8:in `each'
+  app/views/orders/index.html.haml:8:in `_app_views_orders_index_html_haml__33259645440623096_69911364399420'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/orders?method=delete" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Processing by OrdersController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (134.6ms)
+Completed 200 OK in 241ms (Views: 236.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /orders.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:42:28 -0500
+Served asset /bootstrap - 304 Not Modified (9ms)
+
+
+Started GET "/orders?method=delete" for 127.8.125.1 at 2014-02-04 22:45:27 -0500
+Processing by OrdersController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[35mOrder Load (10.5ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionController::RoutingError (No route matches {:controller=>"orders", :action=>"destroy"}):
+  app/views/orders/index.html.haml:13:in `block in _app_views_orders_index_html_haml__33259645440623096_69911365273500'
+  app/views/orders/index.html.haml:8:in `each'
+  app/views/orders/index.html.haml:8:in `_app_views_orders_index_html_haml__33259645440623096_69911365273500'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/orders?method=delete" for 127.8.125.1 at 2014-02-04 22:48:40 -0500
+Connecting to database specified by database.yml
+Processing by OrdersController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (217.3ms)
+Completed 500 Internal Server Error in 836ms
+
+ActionView::Template::Error (undefined local variable or method `delete_order' for #<#<Class:0x000000040ccfc0>:0x00000003e691e8>):
+    10:       %td= order.id
+    11:       %td= order.order_placed
+    12:       %td= link_to 'Show', order
+    13:       %td= link_to 'Destroy', delete_order
+    14: %br
+    15: 
+    16: =link_to "New Order", new_order_path
+  app/views/orders/index.html.haml:13:in `block in _app_views_orders_index_html_haml___3132172957934203786_69993707998980'
+  app/views/orders/index.html.haml:8:in `each'
+  app/views/orders/index.html.haml:8:in `_app_views_orders_index_html_haml___3132172957934203786_69993707998980'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.2ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (76.9ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:48:44 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (8.1ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (29.4ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (undefined local variable or method `delete_order' for #<#<Class:0x000000040ccfc0>:0x007f514c02f158>):
+    10:       %td= order.id
+    11:       %td= order.order_placed
+    12:       %td= link_to 'Show', order
+    13:       %td= link_to 'Destroy', delete_order
+    14: %br
+    15: 
+    16: =link_to "New Order", new_order_path
+  app/views/orders/index.html.haml:13:in `block in _app_views_orders_index_html_haml___3132172957934203786_69993707998980'
+  app/views/orders/index.html.haml:8:in `each'
+  app/views/orders/index.html.haml:8:in `_app_views_orders_index_html_haml___3132172957934203786_69993707998980'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+  Rendered /var/lib/stickshift/52cc76ece0b8cd84fd00042e/app-root/data/lib/ruby/gems/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (75.2ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:02 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (5.4ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (97.0ms)
+Completed 200 OK in 648ms (Views: 523.2ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:03 -0500
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:03 -0500
+Served asset /customers.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:03 -0500
+Served asset /customers.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:03 -0500
+Served asset /orders.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:03 -0500
+Served asset /bootstrap - 304 Not Modified (167ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:03 -0500
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:04 -0500
+Served asset /orders.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:04 -0500
+Served asset /application.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:04 -0500
+Served asset /jquery.js - 304 Not Modified (108ms)
+
+
+Started DELETE "/orders/142" for 127.8.125.1 at 2014-02-04 22:54:08 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"142"}
+  [1m[35mOrder Load (10.8ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 142 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (105.5ms)[0m  DELETE FROM `orders` WHERE `orders`.`id` = 142
+  [1m[36m (63.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 262ms (ActiveRecord: 180.1ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (2.8ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (82.1ms)
+Completed 200 OK in 165ms (Views: 137.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /customers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:09 -0500
+Served asset /bootstrap - 304 Not Modified (313ms)
+
+
+Started DELETE "/orders/141" for 127.8.125.1 at 2014-02-04 22:54:11 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"141"}
+  [1m[36mOrder Load (29.7ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 141 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `orders` WHERE `orders`.`id` = 141[0m
+  [1m[35m (57.1ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 139ms (ActiveRecord: 87.3ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:12 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (70.6ms)
+Completed 200 OK in 190ms (Views: 182.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:12 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:12 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:12 -0500
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:12 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:12 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:12 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:13 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:13 -0500
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:13 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:13 -0500
+Served asset /bootstrap - 304 Not Modified (17ms)
+
+
+Started DELETE "/orders/140" for 127.8.125.1 at 2014-02-04 22:54:14 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"140"}
+  [1m[35mOrder Load (1.0ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 140 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `orders` WHERE `orders`.`id` = 140
+  [1m[36m (59.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 119ms (ActiveRecord: 61.2ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:15 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (92.1ms)
+Completed 200 OK in 277ms (Views: 267.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:15 -0500
+Served asset /orders.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:15 -0500
+Served asset /application.css - 304 Not Modified (69ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:16 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:16 -0500
+Served asset /customers.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:16 -0500
+Served asset /customers.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:16 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:16 -0500
+Served asset /bootstrap - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:16 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:16 -0500
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started DELETE "/orders/139" for 127.8.125.1 at 2014-02-04 22:54:18 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"139"}
+  [1m[36mOrder Load (2.9ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 139 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mDELETE FROM `orders` WHERE `orders`.`id` = 139[0m
+  [1m[35m (70.2ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 82ms (ActiveRecord: 74.7ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:18 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (143.3ms)
+Completed 200 OK in 236ms (Views: 229.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:18 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:18 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:18 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:18 -0500
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:19 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:19 -0500
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:19 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:19 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:19 -0500
+Served asset /bootstrap - 304 Not Modified (10ms)
+
+
+Started DELETE "/orders/138" for 127.8.125.1 at 2014-02-04 22:54:21 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"138"}
+  [1m[35mOrder Load (3.6ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 138 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `orders` WHERE `orders`.`id` = 138
+  [1m[36m (632.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 645ms (ActiveRecord: 636.6ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:23 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (11.0ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (53.1ms)
+Completed 200 OK in 151ms (Views: 117.2ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:23 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:23 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:23 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:23 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:23 -0500
+Served asset /application.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:24 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:24 -0500
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:24 -0500
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:24 -0500
+Served asset /bootstrap - 304 Not Modified (15ms)
+
+
+Started DELETE "/orders/137" for 127.8.125.1 at 2014-02-04 22:54:25 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"137"}
+  [1m[36mOrder Load (3.7ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 137 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM `orders` WHERE `orders`.`id` = 137[0m
+  [1m[35m (20.9ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 31ms (ActiveRecord: 25.9ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:25 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (44.1ms)
+Completed 200 OK in 144ms (Views: 113.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /customers.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /application.js - 304 Not Modified (77ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:26 -0500
+Served asset /bootstrap - 304 Not Modified (74ms)
+
+
+Started DELETE "/orders/136" for 127.8.125.1 at 2014-02-04 22:54:28 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"136"}
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 136 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `orders` WHERE `orders`.`id` = 136
+  [1m[36m (76.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 109ms (ActiveRecord: 77.5ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:28 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (7.6ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (116.3ms)
+Completed 200 OK in 187ms (Views: 165.1ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:28 -0500
+Served asset /application.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /orders.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /bootstrap - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:29 -0500
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started DELETE "/orders/135" for 127.8.125.1 at 2014-02-04 22:54:30 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"135"}
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 135 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM `orders` WHERE `orders`.`id` = 135[0m
+  [1m[35m (40.1ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 60ms (ActiveRecord: 42.8ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:30 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.7ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (35.1ms)
+Completed 200 OK in 106ms (Views: 96.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:31 -0500
+Served asset /bootstrap - 304 Not Modified (57ms)
+
+
+Started DELETE "/orders/134" for 127.8.125.1 at 2014-02-04 22:54:32 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"134"}
+  [1m[35mOrder Load (5.3ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 134 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM `orders` WHERE `orders`.`id` = 134
+  [1m[36m (27.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 44ms (ActiveRecord: 33.8ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:32 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (8.9ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (70.6ms)
+Completed 200 OK in 181ms (Views: 162.2ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /scaffolds.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /orders.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /bootstrap - 304 Not Modified (32ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /application.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:33 -0500
+Served asset /jquery.js - 304 Not Modified (39ms)
+
+
+Started DELETE "/orders/133" for 127.8.125.1 at 2014-02-04 22:54:34 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"133"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 133 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.7ms)[0m  [1mDELETE FROM `orders` WHERE `orders`.`id` = 133[0m
+  [1m[35m (51.4ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 69ms (ActiveRecord: 55.8ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:34 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (8.6ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 75ms (Views: 64.6ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /customers.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /orders.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /application.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:35 -0500
+Served asset /bootstrap - 304 Not Modified (21ms)
+
+
+Started DELETE "/orders/132" for 127.8.125.1 at 2014-02-04 22:54:36 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"132"}
+  [1m[35mOrder Load (10.0ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 132 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `orders` WHERE `orders`.`id` = 132
+  [1m[36m (57.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 84ms (ActiveRecord: 67.7ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:36 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (6.7ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (60.1ms)
+Completed 200 OK in 162ms (Views: 134.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /customers.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /orders.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:37 -0500
+Served asset /bootstrap - 304 Not Modified (9ms)
+
+
+Started DELETE "/orders/131" for 127.8.125.1 at 2014-02-04 22:54:38 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"131"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 131 LIMIT 1[0m
+  [1m[35m (2.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `orders` WHERE `orders`.`id` = 131[0m
+  [1m[35m (85.1ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 95ms (ActiveRecord: 88.0ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:38 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 69ms (Views: 63.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:38 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /application.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:39 -0500
+Served asset /bootstrap - 304 Not Modified (10ms)
+
+
+Started DELETE "/orders/130" for 127.8.125.1 at 2014-02-04 22:54:40 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"130"}
+  [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 130 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  DELETE FROM `orders` WHERE `orders`.`id` = 130
+  [1m[36m (79.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 100ms (ActiveRecord: 82.8ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:40 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.4ms)[0m  SELECT `orders`.* FROM `orders` 
+  Rendered orders/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 45ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /scaffolds.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /customers.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:41 -0500
+Served asset /bootstrap - 304 Not Modified (4ms)
+
+
+Started DELETE "/orders/129" for 127.8.125.1 at 2014-02-04 22:54:42 -0500
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w7l6xFMLpEpiYiWL5l06F4Pwu6nqUPl0iy2oBZQX6XE=", "id"=>"129"}
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 129 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM `orders` WHERE `orders`.`id` = 129[0m
+  [1m[35m (80.6ms)[0m  COMMIT
+Redirected to http://project-livec9778fb827a2.rhcloud.com/orders
+Completed 302 Found in 87ms (ActiveRecord: 82.2ms)
+
+
+Started GET "/orders" for 127.8.125.1 at 2014-02-04 22:54:42 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders` [0m
+  Rendered orders/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 66ms (Views: 61.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap" for 127.8.125.1 at 2014-02-04 22:54:43 -0500
+Served asset /bootstrap - 304 Not Modified (12ms)

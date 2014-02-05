@@ -10,6 +10,7 @@
       %td= order.id
       %td= order.order_placed
       %td= link_to 'Show', order
+      %td= link_to 'Destroy', order, :method => :delete
 %br
 
 =link_to "New Order", new_order_path

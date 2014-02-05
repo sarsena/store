@@ -10,6 +10,7 @@ Store::Application.routes.draw do
   post '/customers' => "customers#create"
   put '/customers/:id' => "customers#update"
   delete '/customers/:id' => "customers#delete"
+  
   # get '/customers/:id' => "customers#show"
   # get 'dkjfals' => "customers#create"
   # The priority is based upon order of creation:

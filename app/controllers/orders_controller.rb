@@ -39,12 +39,11 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    
-    # @order = Order.new(params[:order])
-
+    @order = Order.new(:customer_id => 1, :order_placed => Time.now.strftime("%Y-%m-%d %H:%M:%S"), :order_total => params[:order_total])
     respond_to do |format|
       if @order.save
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
+        OrderProduct.add_new(params[:products], @order)
+        format.html { redirect_to "/orders", notice: 'Order was successfully created.' }
         format.json { render json: @order, status: :created, location: @order }
       else
         format.html { render action: "new" }
